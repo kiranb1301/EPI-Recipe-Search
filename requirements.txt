@@ -1,0 +1,4 @@
+Django==5.0.2
+djangorestframework==3.13
+opensearch-py==2.0
+python-dotenv==0.19
