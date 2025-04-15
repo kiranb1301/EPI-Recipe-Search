@@ -10,11 +10,8 @@ auth = ('admin', 'Aa@208010')  # Update with your OpenSearch username and passwo
 client = OpenSearch(
     hosts=[{'host': host, 'port': port}],
     http_compress=True,
-    http_auth=auth,
-    use_ssl=True,
+    use_ssl=False,  # Changed from True
     verify_certs=False,
-    ssl_assert_hostname=False,
-    ssl_show_warn=False,
 )
 
 index_name = 'epirecipes' 
