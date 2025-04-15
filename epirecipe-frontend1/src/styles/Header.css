@@ -1,0 +1,24 @@
+.header {
+    position: relative; /* Set to relative to position video correctly */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white; /* White text color */
+    overflow: hidden; /* Prevent overflow of video */
+}
+
+.header-video {
+    position: absolute; /* Position video absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the header area */
+    z-index: 0; /* Behind other elements */
+}
+
+.header-left, .header-center, .header-right {
+    position: relative; /* Position relative to allow stacking */
+    z-index: 1; /* Above the video */
+}

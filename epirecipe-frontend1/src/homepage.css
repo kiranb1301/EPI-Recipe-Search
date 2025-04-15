@@ -1,0 +1,48 @@
+/* src/styles/HomePage.css */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.recipe-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.02);
+}
+
+.recipe-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    margin: 0 0 10px;
+}
+
+.recipe-card .directions {
+    display: none;
+}
+
+.recipe-card.active .directions {
+    display: block;
+}

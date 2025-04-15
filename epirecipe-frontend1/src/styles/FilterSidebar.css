@@ -1,0 +1,28 @@
+.filter-sidebar {
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.filter-sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.filter-sidebar label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.filter-sidebar input[type="range"] {
+    width: 100%;
+}
+
+.filter-sidebar span {
+    display: block;
+    margin-top: 5px;
+}
+
+.filter-sidebar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+}

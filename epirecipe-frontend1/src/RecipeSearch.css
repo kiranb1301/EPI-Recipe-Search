@@ -1,0 +1,135 @@
+/* Recipe Search Container */
+.recipe-search-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Search Section Styling */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%; /* Full width */
+}
+
+/* Search Input Field */
+.search-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 300px; /* Fixed width for search input */
+}
+
+/* Search Button */
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Recipe Results Section */
+.recipe-results {
+    width: 100%; /* Full width for results */
+    display: flex;
+    flex-direction: column; /* Stack recipe cards */
+    align-items: center; /* Center cards */
+}
+
+/* Individual Recipe Card */
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 300px; /* Fixed width for consistency */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.recipe-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Filters Section */
+.filters {
+    display: flex;
+    flex-direction: column; /* Stack filters vertically */
+    align-items: center; /* Center filters */
+    margin-bottom: 20px;
+}
+
+/* Filter Input Fields */
+.filters input {
+    margin: 10px 0; /* Adjust margin for spacing */
+    padding: 15px; /* Increased padding for larger input */
+    width: 250px; /* Wider width for inputs */
+    font-size: 16px; /* Increase font size for better readability */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border for inputs */
+}
+
+/* Button for Filters */
+.filters button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green background for apply button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin for spacing */
+    font-size: 16px; /* Increase font size */
+}
+
+/* Recipe Modal */
+.recipe-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center; /* Center modal */
+    align-items: center; /* Center modal */
+    z-index: 1000; /* Ensure modal is on top */
+}
+
+.recipe-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%; /* Responsive width */
+    max-width: 600px; /* Max width */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer; /* Pointer cursor for button */
+    position: absolute; /* Positioning for close button */
+    top: 10px;
+    right: 10px;
+}
+
+/* Star Rating */
+.star-icon {
+    color: #f39c12; /* Gold color for filled stars */
+}
+.filled-star {
+    color: #f39c12; /* Gold color for filled stars */
+}
+.empty-star {
+    color: #ddd; /* Gray color for empty stars */
+}
